@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Laon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="HTML/main.js">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+</head>
+
+<body>
+    <div class="container">
+        <form class="text-center border border-light p-5" action="#!">
+            <i class="fa fa-user-o  circle" aria-hidden="true"></i>
+            <p class="h4 mb-4">Personal Information</p>
+
+            <!-- Input for Surname and Firstname -->
+            <div class="row">
+                <div class="input-group col-6 mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-address-book-o"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Surname" aria-label="Surname"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group col-6 mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-address-book-o"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="FirstName" aria-label="FirstName"
+                        aria-describedby="basic-addon1">
+                </div>
+                <!-- input for Email and Phone  -->
+                <div class="input-group col-6 mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group col-6 mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone-square"></i></span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Phone" aria-label="Phone"
+                        aria-describedby="basic-addon1">
+                </div>
+
+                <!-- input for Residentail and Id type -->
+                <div class="input-group col-6 mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1" style="height: 38px; width: 42px;"><i
+                                class="fa fa-map-marker"></i></span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="Residentail Address"
+                        aria-label="Residentail Address" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group col-6 mb-4 ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1" style="height: 38px; width: 42px;"><i
+                                class="fa fa-id-card"></i></span>
+                    </div>
+                    <select class="browser-default custom-select mb-4">
+                        <option value="" selected disabled>ID Type</option>
+                        <option value="National Id">National Id</option>
+                        <option value="Driver License">Driver License</option>
+                        <option value="International Passport">International Passport</option>
+                    </select>
+
+                </div>
+
+                <!-- input for ID Number -->
+                <div class="input-group col-6 mb-4" style="margin-top:-24px;">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-list-ol"></i></span>
+                    </div>
+                    <input type="password" class="form-control" placeholder="IDNumber" aria-label="IDNumber"
+                        aria-describedby="basic-addon1">
+                </div>
+
+            </div>
+            <br>
+            <hr><br>
+            <!-- upload Film -->
+            <div class="h4 mb-4">
+                <i class="fa fa-cloud-upload circle" aria-hidden="true"></i>
+                <p>Upload File</p>
+            </div>
+
+            <div class="row">
+                <!-- ID upload -->
+                <div class="col-6">
+                    <div class="dropzone" id="dropzone">
+                        <div class="file-field">
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-mdb-color btn-rounded float-centered">
+                                    <input type="file">
+                                    <span style="font-size: 12px"> ID scan Upload</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proof of residency -->
+                <div class="col-6 dropzone" id="dropzone">
+                        <div class="file-field">
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-mdb-color btn-rounded float-centered">
+                                    <input type="file">
+                                    <span style="font-size: 12px;">Proof of residency
+                                        <pre>(lightbill, waterbill, bankstatement)</pre> </span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <br><br>
+            <!-- Sign up button -->
+            <div>
+                <button class="btn btn-warning btn-rounded waves-effect  w-50 h-45" type="submit" style="border-radius: 50px;">Apply</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

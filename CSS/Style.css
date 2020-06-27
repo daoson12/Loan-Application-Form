@@ -1,0 +1,29 @@
+
+/* personal information and upload file section */
+.circle {
+    font-size: 40px;
+    border-color: black;
+    border: solid 2px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 20px;
+}
+
+/* upload section styling */
+.dropzone {
+    height: 150px;
+    border: 2px dashed #ccc;
+    color: #ccc;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.979);
+}
+
+
